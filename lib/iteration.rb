@@ -9,7 +9,11 @@ def join_ingredients(src)
   strArr = []
   i = 0
   while i < src.count do
-      strArr.push("I love #{src[i][0]} and #{src[i][1]} on my pizza")
+    j = 0
+    while j < 1 do
+      strArr.push("I love #{src[i][j]} and #{src[i][j+1]} on my pizza")
+      j += 1
+  	end
     i += 1
   end
   return strArr
